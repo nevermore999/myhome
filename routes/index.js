@@ -21,7 +21,7 @@ index.post('/login', (request, response) => {
         }
         response.render('index/home.html', args)
     }else {
-        response.render('/index')
+        response.render('index/app.html')
     }
 })
 index.post('/register', (request, response) => {
