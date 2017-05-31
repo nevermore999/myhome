@@ -27,6 +27,7 @@ index.post('/login', (request, response) => {
 index.post('/register', (request, response) => {
     const form = request.body
     const u = User.register(form)
+    response.cookie('id', u.id)
     response.render('index/home.html')
 })
 module.exports = index
