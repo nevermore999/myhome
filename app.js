@@ -38,6 +38,6 @@ const run = (port=4000, host='') => {
     })
 }
 if (require.main === module) {
-    run(4000, '127.0.0.1')
+    run(5000, '0.0.0.0')
 }
 module.exports = app
