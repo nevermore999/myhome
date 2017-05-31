@@ -21,7 +21,7 @@ index.post('/login', (request, response) => {
         }
         response.render('index/home.html', args)
     }else {
-        alert('用户名或密码错误')
+        response.render('/index')
     }
 })
 index.post('/register', (request, response) => {
